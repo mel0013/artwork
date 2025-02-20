@@ -9,13 +9,53 @@ body {
 /* Header */
 header {
   background-color: #ffffff;
-  color: #000000;
+  color: #ea1285;
   padding: 10px 0;
   text-align: center;
 }
 
 header h1 {
-  letter-spacing: 2px;
+  font-size: 36px;
+  letter-spacing: 4px;
+  font-weight: 500;
+}
+
+/* Button Container */
+.header-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid #ea1285;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ea1285;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.btn:hover {
+  background-color: #ea1285;
+  color: #ffffff;
+}
+
+/* Blog Button (Different Style) */
+.btn-secondary {
+  border-color: #333;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #333;
+  color: #ffffff;
 }
 
 /* Sections */
@@ -23,15 +63,11 @@ section {
   text-align: center;
 }
 
-h1 {
-  font-size: 36px;
-}
-
-h2 {
-  font-size: 21px;
+h3 {
+  font-size: 20px;
   letter-spacing: 1px;
   font-weight: 500;
-  color: #a7719d;
+  color: #545354;
 }
 
 /* Gallery */
@@ -52,7 +88,7 @@ h2 {
 /* Footer */
 footer {
   background-color: #ffffff;
-  color: #000000;
+  color: #ffffff;
   padding: 10px 0;
   text-align: center;
 }
