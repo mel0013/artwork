@@ -4,7 +4,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  color: #333;
 }
 
 /* Header */
@@ -17,7 +16,6 @@ header {
 
 /* Sections */
 section {
-  padding: 40px;
   text-align: center;
 }
 
@@ -26,8 +24,8 @@ h1 {
 }
 
 h2 {
-  font-size: 28px;
-  color: #444;
+  font-size: 21px;
+  color: #a7719d;
 }
 
 /* Gallery */
@@ -35,7 +33,6 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  padding: 20px;
 }
 
 .gallery-grid img {
