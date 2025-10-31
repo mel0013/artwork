@@ -1,15 +1,12 @@
 /* General Styles */
 body {
   font-family: "Montserrat", sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: #ffffff;
 }
 
 /* Header */
 header {
   background-color: #ffffff;
-  color: #ea1285;
   padding: 10px 0;
   text-align: center;
 }
@@ -18,14 +15,26 @@ header h1 {
   font-size: 36px;
   letter-spacing: 4px;
   font-weight: 500;
+  color: #ea1285;
 }
 
-/* Button Container */
-.header-buttons {
+/* Artist statement */
+.intro {
   display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 650px;
+}
+
+.artist-statement {
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  margin: 0;
+  color: #545354;
+  text-align: center;
 }
 
 /* Buttons */
@@ -47,17 +56,6 @@ header h1 {
   color: #ffffff;
 }
 
-/* Blog Button (Different Style) */
-.btn-secondary {
-  border-color: #333;
-  color: #333;
-}
-
-.btn-secondary:hover {
-  background-color: #333;
-  color: #ffffff;
-}
-
 /* Sections */
 section {
   text-align: center;
@@ -76,6 +74,13 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 20px;
+}
+
+/* Mobile View —  2 columns */
+@media (max-width: 425px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .gallery-grid img {
